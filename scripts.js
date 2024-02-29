@@ -1,5 +1,5 @@
 function searchWeather() {
-    const apiKey = '7b096067e0b66b2ff4701ef281abce27'; // Replace with your OpenWeatherMap API key
+    const apiKey = '7b096067e0b66b2ff4701ef281abce27';
     const city = document.getElementById('search').value;
 
     if (city.trim() === '') {
@@ -54,12 +54,12 @@ function getCurrentLocationWeather() {
     }
 }
 
-// Add event listener to the search button
+
 document.getElementById('search').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         searchWeather();
     }
 });
 
-// Add event listener to the auto-detect button
+
 document.getElementById('autoDetect').addEventListener('click', getCurrentLocationWeather);
